@@ -54,7 +54,7 @@
                             <button type="button" class="btn text-white py-2" style="background-color:rgb(79, 70, 229)" data-bs-toggle="modal" data-bs-target="#newCoachProfile">
                                 New Coach
                             </button>
-                            <button type="button" class="btn text-white" style="background-color:rgb(79, 70, 229)">
+                            <button id="seeDatatablesBtn" type="button" class="btn text-white" style="background-color:rgb(79, 70, 229)">
                                 See Datatables
                             </button>
                         </div>
@@ -546,5 +546,12 @@
 
 
 </style>
+
+<script>
+    document.getElementById('seeDatatablesBtn').addEventListener('click', function() {
+        window.location.href = '/datatables';
+    });
+</script>
+
 
 @endsection
